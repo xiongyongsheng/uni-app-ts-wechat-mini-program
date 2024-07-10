@@ -41,19 +41,13 @@
     "backgroundColor": "#ffffff",
     "list": [
       {
-        "text": "发现",
+        "text": "index",
         "iconPath": "/static/custom-tab-bar/home.png",
         "selectedIconPath": "/static/custom-tab-bar/home_a.png",
         "pagePath": "pages/index/index"
       },
       {
-        "text": "管家",
-        "iconPath": "/static/custom-tab-bar/ai.png",
-        "selectedIconPath": "/static/custom-tab-bar/ai_a.png",
-        "pagePath": "pages/chat/chat"
-      },
-      {
-        "text": "我的",
+        "text": "my",
         "iconPath": "/static/custom-tab-bar/my.png",
         "selectedIconPath": "/static/custom-tab-bar/my_a.png",
         "pagePath": "pages/my/my"
@@ -62,11 +56,9 @@
   },
   "globalStyle": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "隐市",
+    "navigationBarTitleText": "uni-app",
     "navigationBarBackgroundColor": "#ffffff",
     "backgroundColor": "#ffffff",
-    "usingComponents": {
-      "van-popup": "/wxcomponents/vant/popup/index"
-    }
+    "usingComponents": {}
   }
 }
