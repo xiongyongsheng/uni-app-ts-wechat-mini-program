@@ -1,0 +1,68 @@
+page {
+  --theme-color: #1d1d1d;
+  --theme-sub-color: #313131;
+  --theme-golden-color: #ccae77;
+  --gray-color: gray;
+  --sub-gray-color: #e1e1e1;
+  --bg-color: #fff;
+
+  --custom-tab-bar-height: 100rpx;
+  --custom-tab-bar-padding-bottom: max(
+    calc(env(safe-area-inset-bottom) + var(--custom-tab-bar-height)),
+    0rpx
+  );
+}
+.c-grid-container {
+  --offset: 20rpx;
+  /* display: grid;
+  grid-template-columns: var(--offset) 710rpx var(--offset);
+  grid-auto-rows: auto; */
+  padding: var(--offset) 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 15rpx;
+}
+.c-grid-container > .c-grid-item {
+  /* grid-column: 2; */
+  width: 690rpx;
+  margin: auto;
+}
+.c-grid-container > .c-grid-item-full {
+  /* grid-column: 1/-1; */
+  width: 750rpx;
+}
+
+.c-custom-tab-bar-safe-area {
+  padding-bottom: var(--custom-tab-bar-padding-bottom) !important;
+}
+
+.c-custom-tab-bar-safe-area[data-scene="1154"] {
+  padding-bottom: 0 !important;
+}
+.c-border-box {
+  box-sizing: border-box;
+}
+.c-line-1 {
+  overflow: hidden; /* 超出部分隐藏 */
+  display: -webkit-box; /* 显示为块级元素 */
+  -webkit-line-clamp: 1; /* 设置最大行数 */
+  -webkit-box-orient: vertical; /* 设置为垂直方向 */
+}
+.c-line-2 {
+  overflow: hidden; /* 超出部分隐藏 */
+  display: -webkit-box; /* 显示为块级元素 */
+  -webkit-line-clamp: 2; /* 设置最大行数 */
+  -webkit-box-orient: vertical; /* 设置为垂直方向 */
+}
+.c-line-3 {
+  overflow: hidden; /* 超出部分隐藏 */
+  display: -webkit-box; /* 显示为块级元素 */
+  -webkit-line-clamp: 3; /* 设置最大行数 */
+  -webkit-box-orient: vertical; /* 设置为垂直方向 */
+}
+.c-text-overflow-ellipsis {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

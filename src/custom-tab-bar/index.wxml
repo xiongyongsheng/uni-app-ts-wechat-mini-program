@@ -1,0 +1,7 @@
+<!--miniprogram/custom-tab-bar/index.wxml-->
+<view class="c-custom-tab-bar">
+  <view wx:for="{{list}}" wx:key="index" class="c-custom-tab-bar-item" data-active="{{currentPagePath === item.pagePath}}" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
+    <image src="{{currentPagePath === item.pagePath ? item.selectedIconPath :item.iconPath}}"></image>
+    <view>{{item.text}}</view>
+  </view>
+</view>
