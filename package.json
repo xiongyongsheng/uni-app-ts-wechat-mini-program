@@ -1,6 +1,7 @@
 {
   "name": "uni-app-ts-wechat-mini-program",
   "version": "0.0.0",
+  "nodeVersion": ">=18.12.0",
   "scripts": {
     "dev": "uni -p mp-weixin --mode dev",
     "prod": "uni -p mp-weixin --mode prod",
